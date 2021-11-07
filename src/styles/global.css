@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
 html,
 body {
   margin: 0;
@@ -5,4 +6,132 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.jumbotron {
+  color: white;
+  font-family: "Mochiy Pop P One", sans-serif;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+.jumbotron .card {
+  color: rgb(32, 129, 226);
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+.jumbotron:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://media.niftygateway.com/image/upload/q_jpegmini,w_1500/v1617988026/A/AlexGrey/NFT_BANNER_1_hqnzls.jpg");
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.crypto-table {
+  max-width: 60%;
+}
+.crypto-table .crypto-table-row {
+  margin-top: 10px;
+}
+.crypto-table .crypto-table-row p {
+  margin: 0;
+  padding: 0;
+}
+.crypto-table-row hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.crypto-table .crypto-table-row .price {
+  color: gray;
+}
+
+.footer .grow {
+  transition: all 0.2s ease-in-out;
+}
+.footer .grow:hover {
+  position: absolute;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Create a simple white box, and add the shadow for the initial state */
+.box {
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Create the hidden pseudo-element */
+/* include the shadow for the end state */
+.box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* The fast way */
+
+.make-it-fast {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Pre-render the bigger shadow, but hide it */
+
+.make-it-fast::after {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+
+.make-it-fast:hover::after {
+  opacity: 1;
+  z-index: 3;
+}
+
+/* Scale up the box */
+.box:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.box:hover::after {
+  opacity: 1;
+}
+
+/* handle small size screens  */
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    color: rgb(32, 129, 226);
+  }
+  .jumbotron-text {
+    margin-top: 20px !important;
+  }
+  .jumbotron-text h1 {
+    margin-bottom: 10px;
+  }
+  .crypto-table {
+    max-width: 90%;
+  }
 }

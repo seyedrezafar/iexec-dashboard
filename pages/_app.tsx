@@ -1,6 +1,6 @@
 import React from "react";
 import { AppProps } from "next/app";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "@styles/app.scss";
 import "@styles/global.css";
 import { Provider } from "react-redux";
 import store from "@redux/store";

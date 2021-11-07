@@ -3,20 +3,8 @@ import Image from "next/image";
 
 export const Footer: React.FC = () => {
   return (
-    <div className="text-center py-4" style={{ backgroundColor: "#282c34" }}>
-      <a
-        href="https://github.com/pankod"
-        target="_blank"
-        className="d-block mb-3"
-      >
-        <Image
-          src="/icons/pankod-icon.svg"
-          alt="pankod"
-          width="140"
-          height="28"
-        />
-      </a>
-
+    <div className="text-center py-4 footer" style={{ backgroundColor: "#282c34" }}>
+      
       <ul className="d-flex justify-content-center list-unstyled p-0 m-0">
         <li className="mx-2">
           <Image
@@ -24,6 +12,7 @@ export const Footer: React.FC = () => {
             alt="github"
             width="28"
             height="29"
+            className="grow"
           />
         </li>
         <li className="mx-2">
@@ -32,6 +21,7 @@ export const Footer: React.FC = () => {
             alt="twitter"
             width="28"
             height="28"
+            className="grow"
           />
         </li>
         <li className="mx-2">
@@ -40,6 +30,7 @@ export const Footer: React.FC = () => {
             alt="youtube"
             width="28"
             height="29"
+            className="grow"
           />
         </li>
         <li className="mx-2">
@@ -48,6 +39,7 @@ export const Footer: React.FC = () => {
             alt="linkedin"
             width="28"
             height="32"
+            className="grow"
           />
         </li>
       </ul>

@@ -2,29 +2,57 @@
   "name": "iexec-dashboard",
   "plugins": [
     {
-      "name": "React-Bootstrap",
-      "description": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit.",
-      "url": "https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+      "id": 1,
+      "name": "LES DIEZ GRACIAS",
+      "description": "3D venus collection inspired by neolithic art.",
+      "url": "https://storage.opensea.io/static/promocards/gracias-promocard4.jpeg",
+      "background": "rgb(92, 43, 44)",
+      "color": "white"
     },
     {
-      "name": "CSS / styled-jsx",
-      "description": "Next.js comes with built-in support for CSS and styled-jsx. Styled-jsx is full, scoped and component-friendly CSS support for JSX (rendered on the server or the client).",
-      "url": "https://github.com/vercel/styled-jsx"
+      "id": 2,
+      "name": "The Colour of Code",
+      "description": "They say a picture is worth a thousand words",
+      "url": "https://storage.opensea.io/static/promocards/colourofcode-promocard.jpeg",
+      "background": "rgb(4, 17, 29)",
+      "color": "white"
     },
     {
-      "name": "React Redux",
-      "description": "Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
-      "url": "https://redux.js.org/introduction/getting-started"
+      "id": 3,
+      "name": "Souls Escape",
+      "description": "The fight of young souls seeking escape from old rituals",
+      "url": "https://storage.opensea.io/static/promocards/souls-promocard.jpeg",
+      "background": "rgb(66, 99, 124)",
+      "color": "white"
+    }
+  ],
+  "nfts": [
+    {
+      "id": 1,
+      "name": "CryptoPunk",
+      "price": "4,011$",
+      "logo": "https://lh3.googleusercontent.com/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE=s100",
+      "tokenIcon": "https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg",
+      "change": "-0.9%",
+      "color": "red"
     },
     {
-      "name": "Jest",
-      "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity.",
-      "url": "https://jestjs.io/docs/en/getting-started"
+      "id": 2,
+      "name": "Parallel Alpha",
+      "price": "4,578$",
+      "logo": "https://lh3.googleusercontent.com/nxaymgd9aJIzLXb0r3oLO0VCMFi0Zex1ubTmEYekEKwOVq1YijOULDeT1qCjk71OTsQW47zmvZ2ZuycXorgu6WA6Wosc6CiOuVnAXGk=s100",
+      "tokenIcon": "https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg",
+      "change": "+555.32%",
+      "color": "green"
     },
     {
-      "name": "Docker",
-      "description": "Docker simplifies and accelerates your workflow, while giving developers the freedom to innovate with their choice of tools, application stacks, and deployment environments for each project.",
-      "url": "https://www.docker.com/get-started"
+      "id": 3,
+      "name": "Bored Ape Yacht Club",
+      "price": "4,536$",
+      "logo": "https://lh3.googleusercontent.com/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB=s100",
+      "tokenIcon": "https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg",
+      "change": "-9.48%",
+      "color": "red"
     }
   ]
 }
