@@ -1,6 +1,9 @@
 {
   "name": "iexec-dashboard",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.14.1"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
